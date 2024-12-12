@@ -4,8 +4,6 @@ import env from "vite-plugin-env-compatible";
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: process.env.GITHUB_PAGES
-    ? "SnapSum"
-    : "./",
+    base: '/SnapSum/',
     plugins: [react(), env({ prefix: "VITE", mountedPath: "process.env" })],
 });

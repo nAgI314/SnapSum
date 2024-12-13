@@ -5,7 +5,7 @@ import { resolve } from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: './',
+    base: '/SnapSum/',
     plugins: [react(), env({ prefix: "VITE", mountedPath: "process.env" })],
     build: {
         rollupOptions: {
